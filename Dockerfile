@@ -16,9 +16,6 @@ COPY requirements.txt /app/
 # Копіюємо проект
 COPY . /app/
 
-# Встановлюємо python-dotenv
-RUN pip install python-dotenv
-
 # Встановлюємо залежності з requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
